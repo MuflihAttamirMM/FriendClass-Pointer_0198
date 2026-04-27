@@ -23,3 +23,24 @@ public:
     void displayAll(orang &a);
 };
 
+void siswa::displayAll(orang &a)
+{
+    cout << id << endl << a.nama;
+}
+void orang::setNama(string Pnama)
+{
+    nama = Pnama;
+}
+void siswa::setId(int Pid)
+{
+    id = Pid;
+}
+int main()
+{
+    orang jepri;
+    jepri.setNama("Jepri Rakabuming");
+    siswa jepri_siswa;
+    jepri_siswa.setId(1);
+    jepri_siswa.displayAll(jepri);
+    return 0;
+}
